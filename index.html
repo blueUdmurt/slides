@@ -16,6 +16,14 @@
 			h1{
 				font-size: 110px !important;
 			}
+			#circ1{
+				width: 100px; 
+				height: 100px;
+            	top: 150px;  
+				left: 98px;
+				border-radius: 200px/200px;
+				background-color: black;
+			}
 		</style>
 	</head>
 	<body>
@@ -59,7 +67,26 @@
 			</section>
 			<section data-markdown="markdown/Square_tri.md">
 			</section>
-			<section data-markdown="markdown/Square_par.md">
+			<section>
+				<section data-markdown class="center">
+					<script type="text/template">
+						### Площадь параллелограмма
+						$$S_{parallelogram}=a \space b \space sinA$$
+						$$S_{parallelogram}=\dfrac{1}{2}d_{1}d_{2}sin\phi$$
+						$$S_{parallelogram}=ah_a=bh_b$$
+
+						- $a,b $ – сторона
+						- $h_a, h_b$ – высоты
+						- $d_1, d_2$ – диагонали
+						- $\phi$ – угол между диагоналями
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						Пример.Найдите площадь параллелограмма, если его сторона равна 6 см, а высота, проведенная к ней – 7см.<br>
+						Решение: Воспользуемся формулой $$S_{parallelogram}=ah_a=6\cdot 7=42 $$
+					</script>
+				</section>
 			</section>
 			<section data-markdown="markdown/Square_tra.md">
 			</section>
@@ -69,34 +96,8 @@
 			</section>
 			<section data-markdown="markdown/Square_ci.md">
 			</section>
-			<section>
-				<section data-markdown class="center">
-					<script type="text/template">
-						### Доходность по методу Дитца
-
-						Введем обозначения:
-						- $R$ - доходность портфеля в процентах
-						- $S_e$ - стоимость портфеля на конец периода
-						- $S_b$ - стоимость портфеля на начало периода
-						- $S_a$ - пополнение счета
-						- $S_w$ - снятия со счета
-					</script>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-						- $W_t$ - временной весовой коэффициент, который применяется к каждому денежному потоку в портфеле
-						- $T$ - длительность отчетного периода в днях, за который считается доходность
-						- $t$ - количество дней с начала инвестирования
-						
-						$$
-						W_t= \dfrac{T-t}{T}
-						$$
-						
-						$$
-						R= \dfrac{S_e-S_b-\sum S_a+\sum S_w}{S_b+\sum(S_aW_t)-\sum(S_wW_t)}
-						$$
-					</script>
-				</section>
+			<section id="circ1">
+				<div></div>
 			</section>
 			<section class="center">
 				<h2>Графики</h2>
