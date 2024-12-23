@@ -14,17 +14,14 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 		<style>
 			h1{
-				font-size: 110px !important;
+				font-size: 100px !important
 			}
-			#circ1{
-				width: 100px; 
-				height: 100px;
-            	top: 150px;  
-				left: 98px;
-				border-radius: 200px/200px;
-				background-color: black;
+			.tost{
+				height: 500px;
 			}
 		</style>
+
+
 	</head>
 	<body>
 		<div class="reveal">
@@ -48,7 +45,7 @@
 			<section data-markdown="markdown/circle.md">
 			</section>
 			<section class="center">
-				<h2>Периметры</h2>
+				<h2>Периметр</h2>
 			</section>
 			<section data-markdown="markdown/perimeter_tri.md">
 			</section>
@@ -63,9 +60,26 @@
 			<section data-markdown="markdown/perimeter_ci.md">
 			</section>
 			<section class="center">
-				<h2>Площади</h2>
+				<h2>Площадь</h2>
 			</section>
-			<section data-markdown="markdown/Square_tri.md">
+			<section>
+				<section data-markdown class="center">
+					<script type="text/template">
+						### Площадь треугольника
+
+						$$S_{triangle}=\sqrt {p \cdot (p - a) \cdot (p - b) \cdot(p - c)}, p= \dfrac {a+b+c}{2}$$
+						$$S_{triangle}=\dfrac{1}{2}ah_a=\dfrac{1}{2}bh_b=\dfrac{1}{2}ch_c$$
+						- $a, b,c $ – стороны
+						- $h_a,h_b,h_c$ – высоты, опущенные на стороны a,b,c
+						- $p$ - полупериметр
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						Пример. Найдем площадь треугольника со стороной 16 см и высотой, проведенной к данной стороне 19.<br>
+						Решение: $$S_{triangle}=\dfrac{1}{2}ah_a=\dfrac{16 \cdot 19}{2}= 152\text{см}^{2}$$
+					</script>
+				</section>
 			</section>
 			<section>
 				<section data-markdown class="center">
@@ -83,8 +97,8 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						Пример.Найдите площадь параллелограмма, если его сторона равна 6 см, а высота, проведенная к ней – 7см.<br>
-						Решение: Воспользуемся формулой $$S_{parallelogram}=ah_a=6\cdot 7=42 $$
+						Пример. Найдите площадь параллелограмма, если его сторона равна 6 см, а высота, проведенная к ней – 7 см.<br>
+						Решение:$$S_{parallelogram}=ah_a=6\cdot 7=42 \text{см}^{2} $$
 					</script>
 				</section>
 			</section>
@@ -103,10 +117,10 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						Пример.Основания трапеции общего вида равны 18 и 6, боковая сторона, равная 7, образует с одним из оснований трапеции угол 150°. Найдите площадь трапеции ABCD.<br>
+						Пример. Основания трапеции общего вида равны 18 и 6, боковая сторона, равная 7, образует с одним из оснований трапеции угол 150°. Найдите площадь трапеции ABCD.<br>
 						Решение:
 						$$DH=ADsinDAH=7\cdot \dfrac{1}{2}=3,5$$
-						$$S_{trapezium}=\dfrac{1}{2}(AB+CD)DH=\dfrac{18+6}{2}\cdot 3,5=42$$
+						$$S_{trapezium}=\dfrac{1}{2}(AB+CD)DH=\dfrac{18+6}{2}\cdot 3,5=42 \text{см}^{2}$$
 					</script>
 				</section>
 			</section>
@@ -122,8 +136,8 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						Пример.Найдите площадь квадрата, если длина его стороны равна 8 см.<br>
-						Решение:$${\small S_{square}=a^2=8^2=64}$$
+						Пример. Найдите площадь квадрата, если длина его стороны равна 8 см.<br>
+						Решение:$$ S_{square}=a^2=8^2=64 \text{см}^{2}$$
 					</script>
 				</section>
 			</section>
@@ -131,9 +145,9 @@
 				<section data-markdown class="center">
 					<script type="text/template">
 						### Площадь ромба
-						$$S_{diamond}=a^2 sin A$$
-						$$S_{diamond}=\dfrac{1}{2}d_{1}d_{2}$$
-						$$S_{diamond}=ah$$
+						$$S_{rhombus}=a^2 sin A$$
+						$$S_{rhombus}=\dfrac{1}{2}d_{1}d_{2}$$
+						$$S_{rhombus}=ah$$
 						- $a$ – сторона
 						- $h$ – высота
 						- $d_1, d_2$ – диагонали
@@ -141,9 +155,9 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						Пример.Одна диагональ ромба составляет 140 см, а вторая – 100 см. Чему равна площадь ромба?<br>
+						Пример. Одна диагональ ромба составляет 140 см, а вторая – 100 см. Чему равна площадь ромба?<br>
 						Решение:
-						$$S_{diamond}=\dfrac{140 \cdot 100}{2}=7000$$
+						$$S_{diamond}=\dfrac{1}{2}d_{1}d_{2}=\dfrac{140 \cdot 100}{2}=7000 \text{см}^{2}$$
 						
 					</script>
 				</section>
@@ -160,48 +174,635 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						Пример.Вычислить площадь круга, ограниченного окружностью радиуса r = 7 см.<br>
+						Пример. Вычислить площадь круга, ограниченного окружностью радиуса r = 7 см.<br>
 						Решение:
-						$$S_{circle}=\pi r^2=\pi\cdot 7^2=3,14\cdot 49=153,86$$
+						$$S_{circle}=\pi r^2=\pi\cdot 7^2=3,14\cdot 49=153,86 \text{см}^{2}$$
 						
 					</script>
 				</section>
 			</section>
-			<section id="circ1">
-				<div></div>
+<!-- 1 -->
+			<style>
+				#circle{
+					position: absolute;
+					width: 500px;
+					height: 500px;
+					border-radius: 250px;
+					background: red;
+					 
+				}
+				#line {
+				position: absolute;
+				top: 50%; /* Центр по вертикали */
+				left: 0;
+				right: 0;
+				height: 2px; /* Толщина линии */
+				background: black; /* Цвет линии */
+				transform: translateY(-50%); /* Центрирование линии по вертикали */
+			}
+				#line1 {
+				position: absolute;
+				left: 50%; /* Центрируем линию по горизонтали */
+				bottom: 50%; /* Начинаем линию от центра по вертикали */
+				width: 2px; /* Ширина линии */
+				height: 250px; /* Длина линии (половина круга) */
+				background: black; /* Цвет линии */
+				transform: translateX(-50%); /* Сдвигаем линию влево на половину её ширины */
+			}
+				#circ_r {
+					position: absolute;
+					top: 110px;
+					left: 260px;
+				}
+				#circ_d {
+					position: absolute;
+					top: 240px;
+					left: 170px;
+				}
+				#circ_p {
+					position: absolute;
+					bottom: 40px;
+					top: 200px;
+					left: 600px;
+				}
+				#circ_s {
+					position: absolute;
+					bottom: 40px;
+					top: 300px;
+					left: 600px;
+				}
+				</style>
+			<section>
+				<h3>Круг</h3>
+				<div id="circle"> 
+					<div id="line"></div>
+					<div id="line1"></div>
+					<div id="circ_r">
+						<input type="number" id="radius_input" min="0" step="any" placeholder="r">
+					</div>
+					<div id="circ_d">
+						<input type="number" id="diameter_input" min="0" step="any" placeholder="d">
+					</div>
+				</div>
+				<div id="circ_p">P =</div> 
+				<div id="circ_s">S = </div> 	
+		<script>
+					document.querySelector('#radius_input').oninput = (e) => {
+						const radius = parseFloat(e.target.value);
+						if (radius <= 0) {
+							alert('Фигура не существует');
+							document.querySelector('#circ_p').innerHTML = 'P =';
+							document.querySelector('#circ_s').innerHTML = 'S =';
+						} else {
+							document.querySelector('#circ_p').innerHTML = 'P = '+ (2 * radius * Math.PI).toFixed(5);
+							document.querySelector('#circ_s').innerHTML = 'S ='+ (radius ** 2 * Math.PI).toFixed(5);
+						}
+					};
+					document.querySelector('#diameter_input').oninput = (e) => {
+					const diameter = parseFloat(e.target.value);
+					const radius = diameter / 2;
+					if (diameter <= 0) {
+						alert('Фигура не существует');
+						document.querySelector('#circ_p').innerHTML = 'P =';
+						document.querySelector('#circ_s').innerHTML = 'S =';
+					} else {
+						document.querySelector('#circ_p').innerHTML = 'P = ' + (diameter * Math.PI).toFixed(5);
+						document.querySelector('#circ_s').innerHTML = 'S = ' + (radius ** 2 * Math.PI).toFixed(5);
+					}
+				};
+					</script>
 			</section>
+<!-- 2 -->
+			<style>
+				#triangle {
+					position: absolute;
+					width: 0;
+					height: 0;
+					border-left: 250px solid transparent; /* Левый край */
+					border-right: 250px solid transparent; /* Правый край */
+					border-bottom: 500px solid red; /* Нижний край */
+				}
+				#line3 {
+				position: absolute;
+				top: 0; /* Позиция по вертикали */
+				left: 50%; /* Центр по горизонтали */
+				width: 2px; /* Ширина линии */
+				height: 500px; /* Высота линии */
+				background-color: black; /* Цвет линии */
+				transform: translateX(-50%); /* Центрирование линии */
+}
 
+				#tri_a {
+					position: absolute;
+					top: 200px;
+					right: 90px;
+				}
+				#tri_b {
+					position: absolute;
+					top: 200px;
+					left: 90px;
+				}
+				#tri_c {
+					position: absolute;
+					top: 480px;
+					left: 5px;
+				}
+				#tri_height {
+					position: absolute;
+					top: 300px;
+					left: 5px;
+				}
+				#tri_angle {
+					position: absolute;
+					top: 5px;
+					left: 5px;
+				}
+				#tri_p {
+					position: absolute;
+					bottom: 40px;
+					top: 200px;
+					left: 600px;
+				}
+				#tri_s {
+					position: absolute;
+					bottom: 40px;
+					top: 300px;
+					left: 600px;
+				}
+			</style>
+			<section>
+				<h3>Треугольник</h3>
+				<div id="triangle">
+				<div id="line3"></div>
+				<div id="tri_a">
+					<input type="number" id="tri_a_input" min="0" step="any" placeholder="a">
+				</div>
+				<div id="tri_b">
+					<input type="number" id="tri_b_input" min="0" step="any" placeholder="b">
+				</div>
+				<div id="tri_c">
+					<input type="number" id="tri_c_input" min="0" step="any" placeholder="c">
+				</div>
+				<div id="tri_height">
+					<input type="number" id="tri_height_input" min="0" step="any" placeholder="h">
+				</div>
+				<div id="tri_angle">
+					<input type="number" id="tri_angle_input" min="0" step="any" placeholder="Угол (градусы)">
+				</div>
+				</div>
+				<div id="tri_p">P =</div> 
+				<div id="tri_s">S = </div> 
+			<script>
+	//по 3 сторонам
+				document.querySelectorAll('#tri_a_input, #tri_b_input, #tri_c_input').forEach(input => {
+            input.oninput = () => {
+                const a = parseFloat(document.querySelector('#tri_a_input').value);
+                const b = parseFloat(document.querySelector('#tri_b_input').value);
+                const c = parseFloat(document.querySelector('#tri_c_input').value);
+                
+                if (isNaN(a) || isNaN(b) || isNaN(c) || a <= 0 || b <= 0 || c <= 0) {
+                    document.querySelector('#tri_s').innerHTML = 'S = ';
+                    document.querySelector('#tri_p').innerHTML = 'P = ';
+                    return; 
+                }
+                if (a + b > c && a + c > b && b + c > a) {
+                    const s = (a + b + c) / 2;
+                    const area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+                    const perimeter = a + b + c;
+                    document.querySelector('#tri_s').innerHTML = 'S = ' + area.toFixed(5);
+                    document.querySelector('#tri_p').innerHTML = 'P = ' + perimeter.toFixed(5);
+                } else {
+                    alert('Фигура не существует');
+                    document.querySelector('#tri_s').innerHTML = 'S = ';
+                    document.querySelector('#tri_p').innerHTML = 'P = ';
+                }
+            };
+        });
+	//площадь по основанию и высоте
+		document.querySelector('#tri_height_input').oninput = () => {
+            const c = parseFloat(document.querySelector('#tri_c_input').value);
+            const height = parseFloat(document.querySelector('#tri_height_input').value);
+            if ( height <= 0 ||  c <= 0) {
+        alert('Фигура не существует'); 
+        document.querySelector('#tri_s').innerHTML = 'S = ';
+        return; 
+    }
+                const areaHeight = (c * height) / 2; 
+                document.querySelector('#tri_s').innerHTML = ' S = ' + areaHeight.toFixed(5);
+            };
+		// площадь по 2 сторонам и углу между ними
+			document.querySelectorAll('#tri_a_input, #tri_b_input, #tri_angle_input').forEach(input => {
+        input.oninput = () => {
+            const a = parseFloat(document.querySelector('#tri_a_input').value);
+            const b = parseFloat(document.querySelector('#tri_b_input').value);
+            const angle = parseFloat(document.querySelector('#tri_angle_input').value);
 
-
-
-
-
-
-
-			<section class="center">
-				<h2>Графики</h2>
+            if (isNaN(a) || isNaN(b) || isNaN(angle) || a <= 0 || b <= 0 || angle <= 0 || angle >= 180) {
+                document.querySelector('#tri_s').innerHTML = 'S = ';
+                return; 
+            }
+            // Проверка существования фигуры
+            if (a + b <= 0) {
+                alert('Фигура не существует');
+                document.querySelector('#tri_s').innerHTML = 'S = ';
+                return;
+            }
+            // Вычисление площади по формуле: S = 0.5 * a * b * sin(угол)
+            const area = 0.5 * a * b * Math.sin(angle * (Math.PI / 180));
+            document.querySelector('#tri_s').innerHTML = 'S = ' + area.toFixed(5);
+        };
+    });
+			</script>
 			</section>
-			<section data-markdown="markdown/line_chart.md">
+<!-- 3 -->
+		<style>
+			#square {
+				position: absolute;
+				width: 500px;
+				height: 500px;
+				background-color: red;
+				border: 1px solid black;
+			}
+			#line4 {
+				position: absolute;
+				left: 0; /* Положение относительно квадрата */
+				top: 0; /* Положение относительно квадрата */
+				width: 707px; /* Длина диагонали (sqrt(500^2 + 500^2)) */
+				height: 2px; /* Толщина вертикальной линии */
+				background:black; /* Цвет линии */
+				transform: rotate(45deg); /* Поворачиваем линию для диагонали */
+				transform-origin: 0 0; /* Точка вращения в левом верхнем углу */
+			}
+			   #side_a {
+					position: absolute;
+					bottom: 500px;
+					left: 150px;
+				}
+				#diagonal {
+					position: absolute;
+					top: 190px;
+					left: 150px;
+				}
+				#square_p{
+					position: absolute;
+					bottom: 40px;
+					top: 200px;
+					left: 600px;
+				}
+				#square_s {
+					position: absolute;
+					bottom: 40px;
+					top: 300px;
+					left: 600px;
+				}
+		</style>
+
+		<section>
+			<h3>Квадрат</h3>
+			<div id="square"> 
+				<div id="line4"></div>
+				<div id="side_a">
+					<input type="number" id="side_input" min="0" step="any" placeholder="Сторона (a)">
+				</div>
+				<div id="diagonal">
+					<input type="number" id="diagonal_input" min="0" step="any" placeholder="Диагональ (d)">
+				</div>
+			</div>
+			<div id="square_p">P =</div> 
+			<div id="square_s">S = </div> 
+
+			<script>
+				document.querySelector('#side_input').oninput = (e) => {
+					const side = parseFloat(e.target.value);
+					if (side <= 0) {
+						alert('Фигура не существует');
+						document.querySelector('#square_p').innerHTML = 'P =';
+						document.querySelector('#square_s').innerHTML = 'S =';
+					} else {
+						document.querySelector('#square_p').innerHTML = 'P = ' + (4 * side).toFixed(5);
+						document.querySelector('#square_s').innerHTML = 'S = ' + (side ** 2).toFixed(5);
+					}
+				};
+
+				document.querySelector('#diagonal_input').oninput = (e) => {
+					const diagonal = parseFloat(e.target.value);
+					if (diagonal <= 0) {
+						alert('Фигура не существует');
+						document.querySelector('#square_s').innerHTML = 'S =';
+					} else {
+						const side = diagonal / Math.sqrt(2);
+						document.querySelector('#square_s').innerHTML = 'S = ' + (side ** 2).toFixed(5);
+					}
+				};
+			</script>
+		</section>
+<!-- 4 -->
+			<style>
+				#rhombus {
+					position: absolute;
+					width: 500px;
+					height: 500px;
+					background-color: red;
+					transform: rotate(45deg); /* Поворачиваем ромб */
+					border: 1px solid black;
+				}
+				#line5 {
+					position: absolute;
+					left: 0; 
+					top: 0; 
+					width: 707px; /* Длина диагонали (sqrt(500^2 + 500^2)) */
+					height: 2px; /* Толщина диагонали */
+					background: black; /* Цвет линии */
+					transform: rotate(45deg); /* Поворачиваем линию для диагонали */
+					transform-origin: 0 0; /* Точка вращения в левом верхнем углу */
+				}
+				#line6 {
+					position: absolute;
+					right: 0; /* Перемещаем линию к правому краю */
+                    top: 0; 
+					width: 707px; /* Длина диагонали (sqrt(500^2 + 500^2)) */
+					height: 2px; /* Толщина диагонали */
+					background: black; /* Цвет линии */
+					transform: rotate(-45deg); /* Поворачиваем линию для диагонали */
+					transform-origin: top right;
+				}
+				#side_a1 {
+					position: absolute;
+					bottom: 500px;
+					left: 150px;
+					
+				}
+				#base_height {
+					position: absolute;
+					top: 190px;
+					left: 200px;
+					transform: rotate(-90deg);
+				}
+				#angle1 {
+					position: absolute;
+					top: 40px;;
+					right: 1px;
+					transform: rotate(-45deg);
+				}
+				#diagonal1 {
+					position: absolute;
+					top: 290px;
+					left: 60px;
+					transform: rotate(-45deg);
+				}
+				#diagonal2 {
+					position: absolute;
+					top: 350px;
+					left: 250px;
+					transform: rotate(-45deg);
+				}
+				#rhombus_p {
+					position: absolute;
+					bottom: 40px;
+					top: 200px;
+					left: 600px;
+				}
+				#rhombus_s {
+					position: absolute;
+					bottom: 40px;
+					top: 300px;
+					left: 600px;
+				}
+			</style>
+			<section>
+				<h3>Ромб</h3>
+				<div id="rhombus"> 
+					<div id="line5"></div>
+					<div id="line6"></div>
+					<div id="side_a1">
+						<input type="number" id="side1_input" min="0" step="any" placeholder="Сторона (a)">
+					</div>
+					<div id="base_height">
+						<input type="number" id="height1_input" min="0" step="any" placeholder="Высота (h)">
+					</div>
+					<div id="angle1">
+						<input type="number" id="angle1_input" min="0" step="any" placeholder="Угол (°)">
+					</div>
+					<div id="diagonal1">
+						<input type="number" id="diag1_input" min="0" step="any" placeholder="Диагональ 1 (d1)">
+					</div>
+					<div id="diagonal2">
+						<input type="number" id="diag2_input" min="0" step="any" placeholder="Диагональ 2 (d2)">
+					</div>
+				</div>
+				<div id="rhombus_p">P =</div> 
+				<div id="rhombus_s">S = </div> 
+				<script>
+					// периметр по 1 стороне
+					document.querySelector('#side1_input').oninput = (e) => {
+						const side = parseFloat(e.target.value);
+						if (side <= 0) {
+							alert('Фигура не существует');
+							document.querySelector('#rhombus_p').innerHTML = 'P =';
+							document.querySelector('#rhombus_s').innerHTML = 'S =';
+						} else {
+							document.querySelector('#rhombus_p').innerHTML = 'P = ' + (4 * side).toFixed(5);
+						}
+					};
+				//площадь по 1 стороне через основание и высоту
+					document.querySelector('#height1_input').oninput = (e) => {
+						const height = parseFloat(e.target.value);
+						const side = parseFloat(document.querySelector('#side1_input').value);
+						if (height <= 0 || side <= 0) {
+							alert('Фигура не существует');
+							document.querySelector('#rhombus_s').innerHTML = 'S =';
+						} else {
+							document.querySelector('#rhombus_s').innerHTML = 'S = ' + (height*side).toFixed(5);
+						}
+					};
+				//площадь по стороне и углу
+					document.querySelector('#angle1_input').oninput = (e) => {
+						const angle = parseFloat(e.target.value);
+						const side = parseFloat(document.querySelector('#side1_input').value);
+						if (angle <= 0 || angle >= 180 || side <= 0) {
+							alert('Фигура не существует');
+							document.querySelector('#rhombus_s').innerHTML = 'S =';
+						} else {
+							document.querySelector('#rhombus_s').innerHTML = 'S = ' + (side ** 2 * Math.sin((angle * Math.PI) / 180)).toFixed(5);
+						}
+					};
+				//площадь по диагоналям
+					document.querySelector('#diag1_input').oninput = (e) => {
+						const diag1 = parseFloat(e.target.value);
+						const diag2 = parseFloat(document.querySelector('#diag2_input').value);
+						if (diag1 <= 0 || diag2 <= 0) {
+							alert('Фигура не существует');
+							document.querySelector('#rhombus_s').innerHTML = 'S =';
+						} else {
+							document.querySelector('#rhombus_s').innerHTML = 'S = ' + ((diag1 * diag2) / 2).toFixed(5);
+						}
+					};
+				
+					document.querySelector('#diag2_input').oninput = (e) => {
+						const diag2 = parseFloat(e.target.value);
+						const diag1 = parseFloat(document.querySelector('#diag1_input').value);
+						if (diag1 <= 0 || diag2 <= 0) {
+							alert('Фигура не существует');
+							document.querySelector('#rhombus_s').innerHTML = 'S =';
+						} else {
+							document.querySelector('#rhombus_s').innerHTML = 'S = ' + ((diag1 * diag2) / 2).toFixed(5);
+						}
+					};
+				</script>
 			</section>
+<!-- 5 -->
+			<style>
+				#trapezoid {
+					position: absolute;
+					width: 500px;
+					height: 300px;
+					background-color: red;
+					border: 1px solid black;
+					clip-path: polygon(0 100%, 100% 100%, 80% 0%, 20% 0%);
+				}
+				
+				#side_a2 {
+					position: absolute;
+					top: 200px;
+					right: 800px;
+				}
+				
+				#side_b2 {
+					position: absolute;
+					top: 200px;
+					left: 350px;
+				}
+				
+				#side_c2 {
+					position: absolute;
+					top: 60px;
+					left: 170px;
+				}
+				
+				#side_d2 {
+					position: absolute;
+					top: 400px;
+					left: 170px;
+				}
+				
+				#trapezoid_p {
+					position: absolute;
+					bottom: 40px;
+					top: 300px;
+					left: 600px;
+				}
+				
+			</style>
+			<section>
+				<h3>Трапеция</h3>
+				<div id="trapezoid"></div>
+				<div id="side_a2">
+					<input type="number" id="side_a2_input" min="0" step="any" placeholder="Сторона a">
+				</div>
+				<div id="side_b2">
+					<input type="number" id="side_b2_input" min="0" step="any" placeholder="Сторона b">
+				</div>
+				<div id="side_c2">
+					<input type="number" id="side_c2_input" min="0" step="any" placeholder="Сторона c">
+				</div>
+				<div id="side_d2">
+					<input type="number" id="side_d2_input" min="0" step="any" placeholder="Сторона d">
+				</div>
+				
+				<div id="trapezoid_p">P =</div> 
+				
 			
-			<section data-markdown="markdown/candlestick.md">
-			</section>
-
-			<section data-fullscreen data-menu-title="Свечной график">
-				<iframe data-src="html/candlestick.html" class="stretch"></iframe>
-			</section>
-	
-			<section class="center">
-				<h3>Юмор</h3>
-			</section>
-			<section data-background-image="html/img/m.jpg"data-background-size="contain"></section>
-			<section data-background-image="html/img/1.jpg"data-background-size="contain"></section>
+				<script>
+					document.querySelectorAll('#side_a2_input, #side_b2_input, #side_c2_input, #side_d2_input').forEach(input => {
+						input.oninput = () => {
+						const a = parseFloat(document.querySelector('#side_a2_input').value) || 0;
+						const b = parseFloat(document.querySelector('#side_b2_input').value) || 0;
+						const c = parseFloat(document.querySelector('#side_c2_input').value) || 0;
+						const d = parseFloat(document.querySelector('#side_d2_input').value) || 0;
+						if (a === 0 || b === 0 || c === 0 || d === 0) {
+							document.querySelector('#trapezoid_p').innerHTML = 'P =';
+							return;
+						}
+						if (a < 0 || b < 0 || c < 0 || d < 0) {
+							alert('Фигура не существует');
+							document.querySelector('#trapezoid_p').innerHTML = 'P =';
+							return;
+						}
 			
-			<section><img src="html/img/2.jpg"></section>
+						const perimeter = a + b + c + d;
+						document.querySelector('#trapezoid_p').innerHTML = 'P = ' + perimeter.toFixed(5);
+					};
+					});
+				</script>
+			</section>
+	<!-- 6 -->
+				<style>
+					#parallelogram {
+						position: absolute;
+						width: 500px;
+						height: 300px;
+						top: 200px;
+						background-color: red;
+						border: 1px solid black;
+						transform: skewY(-20deg); /* Сдвиг для визуализации параллелограмма */
+					}
+					#side_a3 {
+						position: absolute;
+						bottom: 300px;
+						left: 150px;
+					}
+					#side_b3 {
+						position: absolute;
+						bottom: 150px;
+						right: 450px;
+					}
+					#parallelogram_p {
+						position: absolute;
+					    bottom: 40px;
+					    top: 200px;
+					    left: 600px;
+					}
+				</style>
+				
+				<section>
+					<h3>Параллелограмм</h3>
+					<div id="parallelogram">
+						<div id="side_a3">
+							<input type="number" id="side_a3_input" min="0" step="any" placeholder="Сторона (a)">
+						</div>
+						<div id="side_b3">
+							<input type="number" id="side_b3_input" min="0" step="any" placeholder="Сторона (b)">
+						</div>
+					</div>
+					<div id="parallelogram_p">P =</div>
+					
+				
+					<script>
+						document.querySelectorAll('#side_a3_input, #side_b3_input, #height3_input').forEach(input => {
+							input.oninput = () => {
+								const sideA = parseFloat(document.querySelector('#side_a3_input').value) || 0;
+								const sideB = parseFloat(document.querySelector('#side_b3_input').value) || 0;
+								if (sideA === 0 || sideB === 0 ) {
+							document.querySelector('#trapezoid_p').innerHTML = 'P =';
+							return;
+						}
+						if (sideA < 0 || sideB < 0 ) {
+							alert('Фигура не существует');
+							document.querySelector('#trapezoid_p').innerHTML = 'P =';
+							return;
+						}
+								const perimeter = 2 * (sideA + sideB);
+								document.querySelector('#parallelogram_p').innerHTML = 'P = ' + perimeter.toFixed(5);
+							};
+						});
+					</script>
+				</section>
+				
 			<section class="center" data menu-title="Заключительный слайд"> <h2>Спасибо за внимание!</h2></section>
 			
 			</div>
 		</div>
+		
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
@@ -240,3 +841,4 @@
 		</script>
 	</body>
 </html>
+
